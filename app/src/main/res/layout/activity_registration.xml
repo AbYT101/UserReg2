@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Registration Form"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/textView"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="114dp" />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/editText2"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="firstname@example.com"
+        android:inputType="textEmailAddress"
+        android:layout_marginStart="80dp"
+        android:layout_below="@id/gender"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="091-XXX-XXXX"
+        android:inputType="phone"
+        android:layout_marginStart="80dp"
+        android:layout_below="@id/editText4"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginStart="80dp"
+        android:layout_below="@id/editText5"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_marginStart="80dp"
+        android:layout_below="@id/editText6"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginStart="150dp"
+        android:layout_below="@id/editText7"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="566dp" />
+    <TextView
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex"
+        android:textSize="20sp"
+        android:layout_alignLeft="@id/editText3"
+        android:layout_below="@id/editText3"
+        android:layout_marginStart="25dp">
+
+    </TextView>
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textV"
+        android:layout_marginStart="50dp">
+
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="Male" />
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="Female" />
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/haveRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you have already Registered"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/button">
+
+    </TextView>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        android:text="Log In"
+        android:layout_below="@+id/haveRegistered"
+        >
+
+    </Button>
+
+
+
+</RelativeLayout>
